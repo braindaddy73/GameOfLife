@@ -2,13 +2,21 @@
 // Created by Heiko Kitscha on 07.04.24.
 //
 
-#ifndef GAMEOFLIFE_BIOTOP_H
-#define GAMEOFLIFE_BIOTOP_H
+#ifndef GAMEOFLIFE_BIOTOPE_H
+#define GAMEOFLIFE_BIOTOPE_H
 
 
-class Biotop {
+class Biotope {
+private:
+    std::vector<std::vector<unsigned char>> biotope;
 
+public:
+    Biotope();
+    ~Biotope();
+
+    calcNextGen();
+    unsigned char getCell(int x, int y);
 };
 
 
-#endif //GAMEOFLIFE_BIOTOP_H
+#endif //GAMEOFLIFE_BIOTOPE_H
