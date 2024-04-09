@@ -7,5 +7,5 @@ set(wxBUILD_SHARED OFF)
 add_subdirectory("libs/wxWidgets-3.2.4")
 
 add_executable(GameOfLife src/main.cpp
-        src/Biotop.cpp
-        src/Biotop.h)
+        src/Biotope.cpp
+        src/Biotope.h)
