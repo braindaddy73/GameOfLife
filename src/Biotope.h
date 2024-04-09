@@ -9,10 +9,10 @@
 #include<vector>
 
 //! Enumeration with the implemented rules
-enum {
+enum Rules {
     STANDARD,    //! Standard rule of Conways Game of Life
     COUNTMOD2    //! Alternate rule "Count modulo 2"
-} Rules;
+};
 
 //! A class to hold the biotope, to calculate generations and draw on a wxMemoryDC
 class Biotope {
@@ -25,6 +25,7 @@ private:
     int height;
     void calcConway();
     void calcCM2();
+    int getNeighbourCount(int x, int y);
 
 public:
     Biotope(int width, int height);
